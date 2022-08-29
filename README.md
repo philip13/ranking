@@ -26,10 +26,7 @@ tie for 3rd place in the sample data).
 
 ### Guidelines
 
-This should be implemented in a language with which you are familiar. We would
-prefer that you use elixir, ruby, javascript, python, swift, or kotlin, if
-you are comfortable doing so. If none of these are comfortable, please choose a
-language that is both comfortable for you and suited to the task.
+This should be implemented in Ruby.
 
 Your solution should be able to be run (and if applicable, built) from the
 command line. Please include appropriate scripts and instructions for
