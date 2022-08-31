@@ -1,11 +1,11 @@
 class Ranking
-  def self.init()
-    # @ranking = {}
-    games_str_lines = get_lines_file("sample-input.txt")
+  def self.init(file_path)
+    games_str_lines = get_lines_file(file_path)
     points_by_team = calculate_points(games_str_lines)
     
     order_ranking = order_by_points(points_by_team)
     ranking_table = get_print_results order_ranking
+    save_ranking ranking_table
   end
 
   def self.get_lines_file url
@@ -75,6 +75,14 @@ class Ranking
     end
 
     output_str
+  end
+
+  def self.save_ranking str_arr
+    out_text_file = str_arr.join(" \n")
+    puts out_text_file
+    Dir.mkdir('./output') unless Dir.exist?('./output')
+    file = File.write("./output/ranking.txt", out_text_file)
+    puts "The ranking was record on: './output/ranking.txt'"
   end
 end
 
