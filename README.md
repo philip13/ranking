@@ -1,3 +1,10 @@
+* The Problem
+* Input/output
+* The rules
+* Guidelines
+* Platform support
+* [Instructions](https://github.com/substantial/developer-candidate-philip13/blob/feature/ranking/INSTRUCTIONS.md)
+
 ## The Problem
 
 We want you to create a command-line application that will calculate the
