@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+Dir[File.join(__dir__, 'lib', '**/*.rb')].each { |file| require file }
+
+ranker = Ranker.new
+
+ARGF.each_line do |line|
+  ranker.add_match(line)
+end
+
+puts ranker.calculate_ranking
